@@ -7,14 +7,14 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en', dir: 'ltr' },
-      titleTemplate: '%s | Bogdan Kostyuk',
+      titleTemplate: '%s | Mohsen Dastaran',
       meta: [
         { lang: 'en' },
         { language: 'English' },
-        { property: 'name', name: 'name', content: 'Bogdan Kostyuk' },
+        { property: 'name', name: 'name', content: 'Mohsen Dastaran' },
         { charset: 'utf-8' },
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-        { 'http-equiv': 'Reply-to', content: 'contact@bogdankostyuk.xyz' },
+        { 'http-equiv': 'Reply-to', content: 'contact@MohsenDastaran.xyz' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'robots', content: 'all' },
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         {
           property: 'og:site_name',
           name: 'og:site_name',
-          content: 'Bogdan Kostyuk',
+          content: 'Mohsen Dastaran',
         },
         { property: 'og:locale', name: 'og:locale', content: 'en' },
         { property: 'og:type', name: 'og:type', content: 'website' },
@@ -63,7 +63,7 @@ export default defineNuxtConfig({
     public: {
       base: isDevelopment
         ? 'http://localhost:3000'
-        : 'https://bogdankostyuk.xyz',
+        : 'https://MohsenDastaran.xyz',
     },
   },
 

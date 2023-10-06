@@ -2,8 +2,8 @@
 
 # Portfolio
 
-<img src="https://bogdankostyuk.xyz/logo.png" align="right"
-     alt="Portfolio logo by Bogdan Kostyuk" width="120" height="120">
+<img src="https://MohsenDastaran.xyz/logo.png" align="right"
+     alt="Portfolio logo by Mohsen Dastaran" width="120" height="120">
 
 This is my portfolio, where you can find little summery of my developer road. Also there are some of
 projects that i am using quite often

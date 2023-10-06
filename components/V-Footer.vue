@@ -43,11 +43,11 @@ onMounted(() => {
     >
       <div class="footer__content">
         <p class="footer__content__title">
-          <span class="footer__content__title__line">Bogdan</span>
+          <span class="footer__content__title__line">Mohsen</span>
           <span
             class="footer__content__title__line footer__content__title__line--pl"
           >
-            Kostyuk
+            Dastaran
           </span>
         </p>
         <ul class="footer__content__social-links">
@@ -63,7 +63,7 @@ onMounted(() => {
         </ul>
 
         <p class="footer__content__copyright">
-          Copyright ©{{ getCurrentYear() }} BK
+          Copyright ©{{ getCurrentYear() }} MD
         </p>
 
         <p class="footer__content__note">

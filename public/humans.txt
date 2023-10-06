@@ -1,6 +1,6 @@
 /* TEAM */
-	Developer: Bogdan Kostyuk.
-	Telegram: https://t.me/bogdankostyuk.
+	Developer: Mohsen Dastaran.
+	Telegram: https://t.me/MohsenDastaran.
 	Location: Ukraine, if you wanna know more, write me 😁.
 
 /* THANKS */

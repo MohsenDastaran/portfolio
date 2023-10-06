@@ -76,7 +76,6 @@ onMounted(() => {
     @enter="overlay.enterPageAnim"
     @leave="overlay.leavePageAnim"
   >
-    <!-- NOTE: use of $route instead of just route is really important for good animation -->
     <div page-content :key="$route.fullPath">
       <NuxtPage />
     </div>
