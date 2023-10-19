@@ -5,7 +5,7 @@ live: 'https://studrecruit.lpnu.ua'
 tags:
   - 'Website'
   - 'SEO'
-  - 'Next.js'
+  - 'Vue.js'
   - 'gsap'
   - 'SCSS'
 image: '/img/studrecruit-logo.webp'

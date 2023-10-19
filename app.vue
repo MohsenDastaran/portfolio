@@ -22,16 +22,6 @@ function setVh() {
   gsap.set(document.documentElement, { '--vh': `${windowHeight / 100}px` });
 }
 
-function showFlagStripes() {
-  gsap.from('.flag-stripe__line', {
-    xPercent: -25,
-    stagger: 0.125,
-    ease: 'expo.out',
-    duration: 1.5,
-    delay: route.name === 'index' ? 3 : 1,
-  });
-}
-
 useHead({
   meta: [
     { property: 'url', name: 'url', content: () => currentURL.value },
@@ -43,7 +33,6 @@ useHead({
 
 onMounted(() => {
   setVh();
-  showFlagStripes();
 
   if (route.name !== 'index') {
     $smoothScroll.disable();
@@ -68,7 +57,6 @@ onMounted(() => {
 
 <template>
   <VNavbar />
-  <UkraineFlagStripe />
 
   <Transition
     :css="false"

@@ -1,7 +1,7 @@
 /* TEAM */
 	Developer: Mohsen Dastaran.
 	Telegram: https://t.me/MohsenDastaran.
-	Location: Ukraine, if you wanna know more, write me 😁.
+	Location: Iran, if you wanna know more, write me 😁.
 
 /* THANKS */
 	Patterns: taken from: https://products.ls.graphics/paaatterns

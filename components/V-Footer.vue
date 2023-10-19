@@ -76,15 +76,6 @@ onMounted(() => {
             height="60"
             alt="love"
           />
-          in
-          <img
-            title="Ukraine"
-            loading="lazy"
-            src="~/assets/img/ukraine-flag.png"
-            width="70"
-            height="70"
-            alt="ukraine"
-          />
         </p>
       </div>
       <button

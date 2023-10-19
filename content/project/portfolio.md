@@ -1,6 +1,6 @@
 ---
 description: 'This website, as you might already notice, is my portfolio. I am using it to showcase what I learn and what I can do. It was built with the cutting-edge framework Nuxt'
-source: 'https://github.com/logotip4ik/portfolio'
+source: 'https://github.com/MohsenDastaran/portfolio'
 live: 'https://MohsenDastaran.xyz'
 tags:
   - Website
@@ -20,7 +20,7 @@ Portfolio Version 3
 :::
 
 #source
-[source](https://github.com/logotip4ik/portfolio)
+[source](https://github.com/MohsenDastaran/portfolio)
 ::
 
 ::project-main
@@ -33,12 +33,12 @@ This website, as you might already notice, is my portfolio. I am using it to sho
 
 While building this website, I faced a lot of different and exceptional issues. One was breaking everything after moving one line of code up or down :sweat_smile:. Another was, how to reconcile Nuxt3, GSAP, and Locomotive Scroll in one package, so the route transition looks soft and native. But after trials and errors, something proper was created. Feel free to break everything :joy:.
 
-- [github](https://github.com/logotip4ik)
+- [github](https://github.com/MohsenDastaran)
 - [twitter](https://twitter.com/MohsenDastaran_)
 - [telegram](https://t.me/MohsenDastaran)
 - [linkedin](https://www.linkedin.com/in/MohsenDastaran)
 - [blog](https://blog.MohsenDastaran.xyz)
-- [email](mailto:contact@MohsenDastaran.xyz)
+- [email](mailto:mohsen.dastaran@gmail.com)
 
 <br />
 

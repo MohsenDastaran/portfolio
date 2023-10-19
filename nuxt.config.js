@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         { property: 'name', name: 'name', content: 'Mohsen Dastaran' },
         { charset: 'utf-8' },
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
-        { 'http-equiv': 'Reply-to', content: 'contact@MohsenDastaran.xyz' },
+        { 'http-equiv': 'Reply-to', content: 'mohsen.dastaran@gmail.com' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'robots', content: 'all' },
