@@ -3,20 +3,20 @@ description: 'This website, as you might already notice, is my portfolio. I am u
 source: 'https://github.com/MohsenDastaran/portfolio'
 live: 'https://MohsenDastaran.xyz'
 tags:
-  - Website
-  - SEO
+  - Vue.js
   - Nuxt.js
   - three.js
   - gsap
   - SCSS
-image: '/img/portfolio-logo.webp'
-previewImage: '/img/portfolio.webp'
+  - SEO
+image: '/logo.svg'
+previewImage: '/logo.svg'
 createdAt: '2022-03-31T00:00:00+03:00'
 ---
 
 ::project-header
 :::project-title
-Portfolio Version 3
+Mohsen Dastaran Portfolio
 :::
 
 #source
@@ -34,10 +34,10 @@ This website, as you might already notice, is my portfolio. I am using it to sho
 While building this website, I faced a lot of different and exceptional issues. One was breaking everything after moving one line of code up or down :sweat_smile:. Another was, how to reconcile Nuxt3, GSAP, and Locomotive Scroll in one package, so the route transition looks soft and native. But after trials and errors, something proper was created. Feel free to break everything :joy:.
 
 - [github](https://github.com/MohsenDastaran)
-- [twitter](https://twitter.com/MohsenDastaran_)
+<!-- - [twitter](https://twitter.com/MohsenDastaran_) -->
 - [telegram](https://t.me/MohsenDastaran)
 - [linkedin](https://www.linkedin.com/in/MohsenDastaran)
-- [blog](https://blog.MohsenDastaran.xyz)
+<!-- - [blog](https://blog.MohsenDastaran.xyz) -->
 - [email](mailto:mohsen.dastaran@gmail.com)
 
 <br />
