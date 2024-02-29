@@ -1,7 +1,6 @@
 ---
 description: 'This website, as you might already notice, is my portfolio. I am using it to showcase what I learn and what I can do. It was built with the cutting-edge framework Nuxt'
 source: 'https://github.com/MohsenDastaran/portfolio'
-live: 'https://MohsenDastaran.xyz'
 tags:
   - Vue.js
   - Nuxt.js

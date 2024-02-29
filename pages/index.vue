@@ -8,9 +8,13 @@ if (process.server) {
 }
 
 useHead({
-  title: 'Front End Developer',
+  title: 'Mohsen Dastaran - Front End Developer',
   meta: [
-    { property: 'og:title', name: 'og:title', content: 'Front End Developer' },
+    {
+      property: 'og:title',
+      name: 'og:title',
+      content: 'Mohsen Dastaran -  Front End Developer',
+    },
     { name: 'description', content: 'Perfection hides in details' },
     {
       property: 'og:description',
