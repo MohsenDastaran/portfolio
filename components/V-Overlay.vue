@@ -11,7 +11,6 @@ defineExpose({ leavePageAnim, enterPageAnim });
 
 function leavePageAnim(pageEl, done) {
   routeChanging.value = true;
-
   const tl = gsap.timeline({
     defaults: { ease: 'expo.out' },
     onComplete: () => {
@@ -49,31 +48,27 @@ function leavePageAnim(pageEl, done) {
 
 function enterPageAnim(pageEl, done) {
   routeChanging.value = true;
-
   const tl = gsap.timeline({
+    ScrollTrigger: 1,
     delay: 0.15,
+    // paused:true,
     defaults: { ease: 'expo.out' },
-    paused: true,
     onStart: () => {
       routeChanging.value = false;
-
       emitter.emit('pointer:inactive');
     },
     onComplete: () => {
       done();
-
       // when user was scrolling down, the nav will be hidden, but
       // on a new page the nav should be visible
       gsap.to('.nav', { autoAlpha: 1 });
     },
   });
-
   tl.from(
     pageEl,
     { y: 500, duration: 1, ease: 'power3.out', clearProps: true },
     0.2,
   );
-
   tl.fromTo(
     '.page-overlay__slide',
     {
@@ -89,18 +84,15 @@ function enterPageAnim(pageEl, done) {
     },
     0.2,
   );
-
   tl.add(() => emitter.emit('overlay:hiding'), '-=0.725');
   tl.add(() => ScrollTrigger.refresh(), 0.5125);
   tl.add(() => $smoothScroll.enable(), 0.75);
-
   tl.fromTo(
     '.page-overlay__slide__text',
     { yPercent: 0, autoAlpha: 0.8 },
     { yPercent: -125, ease: 'expo.out' },
     0,
   );
-
   emitter.once('images:loaded', () => tl.play());
 }
 </script>
@@ -111,7 +103,7 @@ function enterPageAnim(pageEl, done) {
     <div class="page-overlay__slide">
       <div class="page-overlay__slide__text__wrapper">
         <p class="page-overlay__slide__text">
-          {{ $route.params.slug || 'index' }}
+          {{ $route.params.slug || 'Loading ...' }}
         </p>
       </div>
 

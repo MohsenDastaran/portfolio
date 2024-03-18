@@ -8,6 +8,7 @@ const { gsap } = useGsap();
 const currentSection = useCurrentSection();
 const isShowingMenu = useMenuToggle();
 const prefersReducedMotion = useReducedMotion();
+const router = useRouter();
 
 const navigationalLinks = [
   {
@@ -22,6 +23,12 @@ const navigationalLinks = [
     action: () => {
       $smoothScroll.scrollTo('.projects');
       isShowingMenu.value = false;
+    },
+  },
+  {
+    label: 'My Explorations',
+    action: () => {
+      router.push('explorations');
     },
   },
   {

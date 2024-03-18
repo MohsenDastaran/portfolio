@@ -96,7 +96,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/content', '@nuxtjs/fontaine'],
+  modules: ['@nuxt/content', '@nuxtjs/fontaine', '@pinia/nuxt'],
 
   fontMetrics: {
     fonts: [

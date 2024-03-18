@@ -1,7 +1,8 @@
 <script setup>
-const { data: projects } = await useAsyncData('projects', () =>
+const { data: projectContents } = await useAsyncData('projects', () =>
   queryContent('project').sort({ createdAt: -1 }).find(),
 );
+defineProps({ projects: Object });
 </script>
 
 <template>
@@ -10,7 +11,7 @@ const { data: projects } = await useAsyncData('projects', () =>
 
     <ul class="projects__list">
       <VProjectsItem
-        v-for="(project, key) in projects"
+        v-for="(project, key) in projects || projectContents"
         :id="key"
         :key="key"
         :project="project"
