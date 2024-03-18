@@ -5,9 +5,9 @@ import { Renderer, Transform, Camera, Plane, Program, Vec2, Color, Mesh } from '
 import fragmentShader from '~/assets/shaders/fragment.glsl';
 import vertexShader from '~/assets/shaders/vertex.glsl';
 
-import { WhitePinkGreen as pallet } from '~/assets/shaders/colors';
+import { getRandomColorPalette } from '~/assets/shaders/colors';
 import { MAX_DPR } from '~/lib/constants';
-
+const pallet = getRandomColorPalette();
 const { $smoothScroll } = useNuxtApp();
 const { gsap } = useGsap();
 const emitter = useEmitter();
