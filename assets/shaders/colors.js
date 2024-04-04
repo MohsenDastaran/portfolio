@@ -112,6 +112,9 @@ const SandstoneShadowSmoke = {
     light: [197, 197, 197],
   },
 };
+const blackWhiteRed = {
+  color1: { dark: [33, 33, 33], light: [33, 33, 33] }, color2: { dark: [124, 61, 61], light: [124, 61, 61] }, color3: { dark: [288, 288, 288], light: [288, 288, 288] }
+}
 
 const colorPalettes = [
   WhitePinkGreen,
@@ -119,7 +122,8 @@ const colorPalettes = [
   CreamBlackWhite,
   SandStoneGrey,
   DesertSandStone,
-  SandstoneShadowSmoke
+  SandstoneShadowSmoke,
+  blackWhiteRed
 ];
 
 export function getRandomColorPalette() {

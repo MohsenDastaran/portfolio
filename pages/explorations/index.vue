@@ -3,7 +3,7 @@
     ref="explorPage"
     style="background-color: aliceblue; color: blue; min-height: 100%"
   >
-    <VHeader />
+    <VHeader subTitle="Explorations" />
     <VProjects :projects="projects" />
   </div>
 </template>
@@ -15,22 +15,19 @@ const explorPage = ref(null);
 
 const projects = [
   {
-    _path: '/project/chatapp',
-    title: 'ChatApp',
+    _path: 'explorations/ogl',
+    title: 'Ogl',
     description:
       'This website, as you might already notice, is my portfolio. I am using it to showcase what I learn and what I can do. It was built with the cutting-edge framework Nuxt',
-    source: 'https://github.com/MohsenDastaran/portfolio',
-    live: 'https://MohsenDastaran.xyz',
     tags: ['Vue.js', 'Nuxt.js', 'three.js', 'gsap', 'SCSS', 'SEO'],
-    image: '/chatApp.svg',
-    previewImage: '/chatApp.svg',
+    previewImage: '/ogl.png',
   },
 ];
 const showBackButton = () =>
   gsap.fromTo(
     '.nav__back-link',
     { autoAlpha: 0 },
-    { autoAlpha: 1, delay: 0.7 },
+    { autoAlpha: 1, delay: 0.4 },
   );
 useImagesLoaded(explorPage, () => emitter.emit('images:loaded'));
 

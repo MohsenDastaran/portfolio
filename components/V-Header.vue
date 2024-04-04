@@ -3,7 +3,10 @@ const { gsap } = useGsap();
 const emitter = useEmitter();
 const prefersReducedMotion = useReducedMotion();
 
-const subtitleText = 'Front End Developer';
+const props = defineProps({
+  subTitle: String,
+});
+const subtitleText = props.subTitle;
 
 const header = ref(null);
 

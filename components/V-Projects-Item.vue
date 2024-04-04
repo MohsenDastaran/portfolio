@@ -65,6 +65,8 @@ onMounted(() => {
     imageResizeObserver.disconnect();
   });
 });
+
+const router = useRouter();
 </script>
 
 <template>
@@ -74,7 +76,11 @@ onMounted(() => {
     data-scroll
     :data-scroll-speed="id % 2 === 0 ? -0.5 : 1"
   >
-    <NuxtLink v-hoverable class="project__wrapper" :href="project._path">
+    <NuxtLink
+      v-hoverable
+      class="project__wrapper"
+      @click="router.push(project._path)"
+    >
       <div ref="projectImageWrapper" class="project__image__wrapper">
         <img
           ref="projectImage"

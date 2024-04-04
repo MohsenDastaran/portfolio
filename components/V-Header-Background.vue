@@ -7,15 +7,24 @@ import vertexShader from '~/assets/shaders/vertex.glsl';
 
 import { getRandomColorPalette } from '~/assets/shaders/colors';
 import { MAX_DPR } from '~/lib/constants';
-const pallet = getRandomColorPalette();
+import { watch, defineExpose } from 'vue';
+
+const emitter = useEmitter();
+const pallet = ref(getRandomColorPalette());
+
+emitter.on('backgroundPalletChange', (data) => {
+  pallet.value[data.type] = {
+    dark: data.color,
+    light: data.color,
+  };
+  if (canvas.value) createBackground();
+});
+
 const { $smoothScroll } = useNuxtApp();
 const { gsap } = useGsap();
-const emitter = useEmitter();
 const isDarkMode = useDarkMode();
 const prefersReducedMotion = useReducedMotion();
-
 const canvas = ref(null);
-
 let isShaderRunning = false;
 let camera = null;
 let scene = null;
@@ -50,11 +59,10 @@ function render() {
 function createBackground() {
   aspect = window.innerWidth / window.innerHeight;
 
-  const backgroundColor = pallet.color1;
+  const backgroundColor = pallet.value.color1;
   const clearColor = (
     isDarkMode.value ? backgroundColor.dark : backgroundColor.light
   ).map((number) => number / 255);
-
   renderer = new Renderer({
     canvas: canvas.value,
     dpr: Math.min(window.devicePixelRatio, MAX_DPR),
@@ -64,7 +72,6 @@ function createBackground() {
     height: window.innerHeight,
     powerPreference: 'high-performance',
   });
-
   gl = renderer.gl;
 
   gl.clearColor(...clearColor, 1);
@@ -97,18 +104,18 @@ function createBackground() {
       },
       color1: {
         value: isDarkMode.value
-          ? new Color(pallet.color1.dark)
-          : new Color(pallet.color1.light),
+          ? new Color(pallet.value.color1.dark)
+          : new Color(pallet.value.color1.light),
       },
       color2: {
         value: isDarkMode.value
-          ? new Color(pallet.color2.dark)
-          : new Color(pallet.color2.light),
+          ? new Color(pallet.value.color2.dark)
+          : new Color(pallet.value.color2.light),
       },
       color3: {
         value: isDarkMode.value
-          ? new Color(pallet.color3.dark)
-          : new Color(pallet.color3.light),
+          ? new Color(pallet.value.color3.dark)
+          : new Color(pallet.value.color3.light),
       },
     },
   });
@@ -137,10 +144,8 @@ function createBackground() {
     delay: 0.4,
     onComplete: () => emitter.emit('shader:running'),
   });
-
   onBeforeUnmount(() => {
     gsap.ticker.remove(callbackTicker);
-
     observer.disconnect();
   });
 }
@@ -152,9 +157,9 @@ watch(isDarkMode, (value) => {
 
   const tl = gsap.timeline();
 
-  tl.to(object.program.uniforms.color1.value, pallet.color1[switchTo], 0);
-  tl.to(object.program.uniforms.color2.value, pallet.color2[switchTo], 0);
-  tl.to(object.program.uniforms.color3.value, pallet.color3[switchTo], 0);
+  tl.to(object.program.uniforms.color1.value, pallet.value.color1[switchTo], 0);
+  tl.to(object.program.uniforms.color2.value, pallet.value.color2[switchTo], 0);
+  tl.to(object.program.uniforms.color3.value, pallet.value.color3[switchTo], 0);
 });
 
 onMounted(() => {

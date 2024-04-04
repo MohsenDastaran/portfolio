@@ -38,7 +38,6 @@ onMounted(() => {
     $smoothScroll.disable();
 
     const pageEl = document.querySelector('div[page-content]');
-    console.log(overlay.value);
     overlay.value.enterPageAnim(pageEl, () => null);
   }
 

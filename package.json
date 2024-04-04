@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
+    "element-plus": "^2.6.3",
     "gsap": "^3.12.2",
     "locomotive-scroll": "^4.1.4",
     "mitt": "^3.0.1",
