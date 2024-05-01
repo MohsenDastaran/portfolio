@@ -1,5 +1,6 @@
 <script setup>
 import SplitType from 'split-type';
+import DownloadSVG from '~/assets/img/download.svg';
 
 const { data: aboutMeText } = await useAsyncData('about-me-text', () =>
   queryContent('about-me').findOne(),
@@ -47,6 +48,29 @@ onMounted(() => {
       :value="aboutMeText"
       class="about-me__content"
     />
+
+    <NuxtLink
+      to="/MohsenDastaranResume.pdf"
+      external
+      v-hoverable.download
+      class="about-me__content resume-link"
+    >
+      Download
+      <DownloadSVG />
+      <div class="about-me__link" data-replace="My Resume">
+        <span>My Resume</span>
+      </div>
+      <DownloadSVG />
+    </NuxtLink>
+    <!-- <NuxtLink
+      class="about-me__content about-me__link"
+      to="MohsenDastaranResume.pdf"
+      external
+    >
+      <DownloadSVG />
+      Download My Resume
+      <DownloadSVG />
+    </NuxtLink> -->
   </section>
 </template>
 
@@ -106,5 +130,62 @@ onMounted(() => {
       color: lighten($color: #000000, $amount: 25);
     }
   }
+}
+
+.about-me__link {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.about-me__link::before,
+.about-me__link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.about-me__link::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.about-me__link::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+.about-me__link:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.about-me__link:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.about-me__link span {
+  padding: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.about-me__link:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+.resume-link {
+  display: block;
+  cursor: none;
+  text-decoration: none;
 }
 </style>

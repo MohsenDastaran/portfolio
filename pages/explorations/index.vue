@@ -22,6 +22,14 @@ const projects = [
     tags: ['Vue.js', 'Nuxt.js', 'three.js', 'gsap', 'SCSS', 'SEO'],
     previewImage: '/ogl.png',
   },
+  {
+    _path: 'explorations/glowButton',
+    title: 'GlowButton',
+    description:
+      'This website, as you might already notice, is my portfolio. I am using it to showcase what I learn and what I can do. It was built with the cutting-edge framework Nuxt',
+    tags: ['Vue.js', 'Nuxt.js', 'three.js', 'gsap', 'SCSS', 'SEO'],
+    previewImage: '/glowButton.png',
+  },
 ];
 const showBackButton = () =>
   gsap.fromTo(

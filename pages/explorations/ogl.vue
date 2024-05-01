@@ -2,6 +2,7 @@
   <header class="header" data-scroll-section>
     <ClientOnly>
       <VHeaderBackground class="header__canvas" />
+      <p class="text">Customize Background:</p>
       <div class="color-box">
         Background:
         <ElColorPicker
@@ -62,7 +63,7 @@ const setPallet = (color, type) => {
 };
 </script>
 
-<style>
+<style scoped>
 .color-box {
   display: flex;
   justify-content: center;
@@ -76,6 +77,9 @@ const setPallet = (color, type) => {
 }
 .color-picker {
   width: 50px;
+}
+.text {
+  padding: 0 10px;
 }
 </style>
 
