@@ -1,25 +1,23 @@
 ---
-description: 'This website, as you might already notice, is my portfolio. I am using it to showcase what I learn and what I can do. It was built with the cutting-edge framework Nuxt'
-source: 'https://github.com/MohsenDastaran/portfolio'
-live: 'https://MohsenDastaran.xyz'
+description: 'A web app for a group that owns several cafes, restaurants and shared workspaces'
+# source: 'https://github.com/MohsenDastaran/portfolio'
+live: 'https://www.majara.io/'
 tags:
   - Vue.js
   - Nuxt.js
-  - three.js
-  - gsap
   - SCSS
   - SEO
-image: '/chatApp.svg'
-previewImage: '/chatApp.svg'
-createdAt: '2022-03-31T00:00:00+03:00'
+image: '/majara.png'
+previewImage: '/majara.png'
+createdAt: '2023-03-31T00:00:00+03:00'
 ---
 
 ::project-header
 :::project-title
-ChatApp
+Majara
 :::
 #live
-[see live](https://trita-chat-app.netlify.app/)
+[see live](https://www.majara.io/)
 ::
 ::project-main
 :::project-section{type="fwidth"}
@@ -27,7 +25,7 @@ ChatApp
 :::
 
 :::project-section{type="text"}
-Simple chatApp for one of my Interview Tasks. It is using Vue.js, Typrscript, SCSS.
+A web app for a group that owns several cafes, restaurants and shared workspaces.
 
 - [github](https://github.com/MohsenDastaran)
 <!-- - [twitter](https://twitter.com/MohsenDastaran_) -->
@@ -44,3 +42,4 @@ Would love to hear from you :wink:
 :::project-section{type="project-next"}
 ::::project-next
 ::
+
