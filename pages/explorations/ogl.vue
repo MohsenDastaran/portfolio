@@ -61,6 +61,12 @@ const setPallet = (color, type) => {
   colorPal.color = rgbStringToArray(color);
   emitter.emit('backgroundPalletChange', colorPal);
 };
+
+onMounted(() => {
+  setTimeout(() => {
+    emitter.emit('images:loaded');
+  }, 100);
+});
 </script>
 
 <style scoped>
@@ -82,4 +88,3 @@ const setPallet = (color, type) => {
   padding: 0 10px;
 }
 </style>
-

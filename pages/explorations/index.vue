@@ -41,6 +41,3 @@ useImagesLoaded(explorPage, () => emitter.emit('images:loaded'));
 
 emitter.once('overlay:hiding', showBackButton);
 </script>
-
-<style></style>
-

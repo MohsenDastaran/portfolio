@@ -11,7 +11,14 @@
   </header>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const emitter = useEmitter();
+onMounted(() => {
+  setTimeout(() => {
+    emitter.emit('images:loaded');
+  }, 100);
+});
+</script>
 
 <style>
 :root {
@@ -222,4 +229,3 @@
   }
 }
 </style>
-
