@@ -49,7 +49,7 @@ function leavePageAnim(pageEl, done) {
 function enterPageAnim(pageEl, done) {
   routeChanging.value = true;
   const tl = gsap.timeline({
-    ScrollTrigger: 1,
+    // ScrollTrigger: 1,
     delay: 0.15,
     // paused:true,
     defaults: { ease: 'expo.out' },
