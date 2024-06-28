@@ -1,7 +1,7 @@
 <template>
   <header class="header" data-scroll-section>
     <NuxtLink
-      to="/MohsenDastaranResume.pdf"
+      to="/Mohsen-Dastaran-Frontend-Resume.pdf"
       external
       v-hoverable.download
       class="glowing-btn"

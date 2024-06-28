@@ -50,7 +50,7 @@ onMounted(() => {
     />
 
     <NuxtLink
-      to="/MohsenDastaranResume.pdf"
+      to="/Mohsen-Dastaran-Frontend-Resume.pdf"
       external
       v-hoverable.download
       class="about-me__content resume-link"
@@ -64,7 +64,7 @@ onMounted(() => {
     </NuxtLink>
     <!-- <NuxtLink
       class="about-me__content about-me__link"
-      to="MohsenDastaranResume.pdf"
+      to="Mohsen-Dastaran-Frontend-Resume.pdf"
       external
     >
       <DownloadSVG />
