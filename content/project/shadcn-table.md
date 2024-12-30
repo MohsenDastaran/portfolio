@@ -7,8 +7,8 @@ tags:
   - Nuxt.js
   - Shadcn
   - table
-image: '/shadcn.png'
-previewImage: '/shadcn.png'
+image: '/shadcn.webp'
+previewImage: '/shadcn.webp'
 createdAt: '2024-03-31T00:00:00+03:00'
 ---
 
@@ -17,7 +17,9 @@ createdAt: '2024-03-31T00:00:00+03:00'
 Shadcn Table
 :::
 #live
+
 [see live](https://shadcn-table.netlify.app/)
+
 ::
 ::project-main
 :::project-section{type="fwidth"}
