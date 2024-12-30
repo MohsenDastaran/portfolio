@@ -37,7 +37,7 @@ with special thanks to [Sepideh Rafiei](https://github.com/Sepidehrfi), [Mohamma
 Forked originaly from https://github.com/mostafa-jamali/vue-persian-calendar.
 
 - [github](https://github.com/Targoman/vue3-jalali-calendar)
-<!-- - [twitter](https://twitter.com/MohsenDastaran_) -->
+- [twitter](https://x.com/Mohsen_Dastaran)
 - [telegram](https://t.me/MohsenDastaran)
 - [linkedin](https://www.linkedin.com/in/MohsenDastaran)
 <!-- - [blog](https://blog.MohsenDastaran.xyz) -->

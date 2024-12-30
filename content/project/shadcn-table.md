@@ -1,25 +1,23 @@
 ---
-description: 'This website, as you might already notice, is my portfolio. I am using it to showcase what I learn and what I can do. It was built with the cutting-edge framework Nuxt'
-source: 'https://github.com/MohsenDastaran/portfolio'
-live: 'https://MohsenDastaran.xyz'
+description: 'A feature-rich table listing the submitted orders'
+source: 'https://github.com/MohsenDastaran/shadcn-table'
+live: 'https://shadcn-table.netlify.app/'
 tags:
   - Vue.js
   - Nuxt.js
-  - three.js
-  - gsap
-  - SCSS
-  - SEO
-image: '/chatApp.svg'
-previewImage: '/chatApp.svg'
-createdAt: '2022-03-31T00:00:00+03:00'
+  - Shadcn
+  - table
+image: '/shadcn.png'
+previewImage: '/shadcn.png'
+createdAt: '2024-03-31T00:00:00+03:00'
 ---
 
 ::project-header
 :::project-title
-ChatApp
+Shadcn Table
 :::
 #live
-[see live](https://trita-chat-app.netlify.app/)
+[see live](https://shadcn-table.netlify.app/)
 ::
 ::project-main
 :::project-section{type="fwidth"}
@@ -27,9 +25,9 @@ ChatApp
 :::
 
 :::project-section{type="text"}
-Simple chatApp for one of my Interview Tasks. It is using Vue.js, Typrscript, SCSS.
+A feature-rich table listing the submitted orders.
 
-- [github](https://github.com/MohsenDastaran)
+- [github](https://github.com/MohsenDastaran/shadcn-table)
 - [twitter](https://x.com/Mohsen_Dastaran)
 - [telegram](https://t.me/MohsenDastaran)
 - [linkedin](https://www.linkedin.com/in/MohsenDastaran)

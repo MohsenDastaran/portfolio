@@ -28,7 +28,7 @@ Majara
 A web app for a group that owns several cafes, restaurants and shared workspaces.
 
 - [github](https://github.com/MohsenDastaran)
-<!-- - [twitter](https://twitter.com/MohsenDastaran_) -->
+- [twitter](https://x.com/Mohsen_Dastaran)
 - [telegram](https://t.me/MohsenDastaran)
 - [linkedin](https://www.linkedin.com/in/MohsenDastaran)
 <!-- - [blog](https://blog.MohsenDastaran.xyz) -->
@@ -42,4 +42,3 @@ Would love to hear from you :wink:
 :::project-section{type="project-next"}
 ::::project-next
 ::
-

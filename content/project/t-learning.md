@@ -28,7 +28,7 @@ T-learning
 tritapp is a social network for medical science professionals that provide its members to interact directly with other professionals to gain access to valid, up-to-date, accurate, and interactive knowledge. tritapp looking for expand its network to all natural and legal professionals to provide the best and fastest specialized, professional, welfare and financial services, including interdisciplinary engagement for members.
 
 - [github](https://github.com/MohsenDastaran)
-<!-- - [twitter](https://twitter.com/MohsenDastaran_) -->
+- [twitter](https://x.com/Mohsen_Dastaran)
 - [telegram](https://t.me/MohsenDastaran)
 - [linkedin](https://www.linkedin.com/in/MohsenDastaran)
 <!-- - [blog](https://blog.MohsenDastaran.xyz) -->
@@ -42,4 +42,3 @@ Would love to hear from you :wink:
 :::project-section{type="project-next"}
 ::::project-next
 ::
-
