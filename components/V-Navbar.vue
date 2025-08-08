@@ -20,10 +20,10 @@ const navMenuButtonSVG = ref(null);
 const links = [
   { label: 'Home', action: () => $smoothScroll.scrollTo(0) },
   { label: 'Projects', action: () => $smoothScroll.scrollTo('.projects') },
-  {
-    label: 'My Explorations',
-    action: () => router.push('explorations'),
-  },
+  // {
+  //   label: 'My Explorations',
+  //   action: () => router.push('explorations'),
+  // },
   { label: 'About', action: () => $smoothScroll.scrollTo('.about-me') },
   { label: 'Contact', action: () => $smoothScroll.scrollTo('.contact') },
 ];

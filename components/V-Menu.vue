@@ -25,12 +25,12 @@ const navigationalLinks = [
       isShowingMenu.value = false;
     },
   },
-  {
-    label: 'My Explorations',
-    action: () => {
-      router.push('explorations');
-    },
-  },
+  // {
+  //   label: 'My Explorations',
+  //   action: () => {
+  //     router.push('explorations');
+  //   },
+  // },
   {
     label: 'About',
     action: () => {
