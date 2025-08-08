@@ -27,6 +27,7 @@ Enlighty Web App
 :::
 
 :::project-section{type="text"}
+Enlighty.ai is an AI-powered market intelligence platform that transforms digital data into precise, actionable consumer insights.
 By leveraging advanced machine learning techniques, our platform deciphers complex consumer metrics, such as consumer journey, brand reputation, brand health, consumer emotions across 17 categories, continuously tracks brand equity, and delivers in-depth audience segmentation based on demographics, lifestyle, and geography. Enlighty.ai empowers businesses to understand consumer behavior throughout the consumer journey, identify key motivations and barriers, and optimize their marketing strategies with data-driven precision.
 
 Our innovative approach enables brands to map the full consumer journey, benchmark their performance against competitors, and uncover hidden opportunities for growth. Designed for forward-thinking organizations, Enlighty.ai provides unparalleled insights that drive engagement, enhance conversion rates, and create long-term brand loyalty in an increasingly competitive landscape.
