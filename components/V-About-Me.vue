@@ -49,6 +49,26 @@ onMounted(() => {
       class="about-me__content"
     />
 
+    <a
+      href="https://github.com/MohsenDastaran/MohsenDastaran"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="about-me__github"
+    >
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="
+            https://raw.githubusercontent.com/MohsenDastaran/MohsenDastaran/main/dark_mode.svg
+          "
+        />
+        <img
+          alt="Mohsen Dastaran's GitHub Profile README"
+          src="https://raw.githubusercontent.com/MohsenDastaran/MohsenDastaran/main/light_mode.svg"
+        />
+      </picture>
+    </a>
+
     <NuxtLink
       to="/Mohsen-Dastaran-Frontend-Resume.pdf"
       external
@@ -130,6 +150,19 @@ onMounted(() => {
       color: lighten($color: #000000, $amount: 25);
     }
   }
+
+  &__github {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 3rem auto 0;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .about-me__link {
@@ -189,3 +222,4 @@ onMounted(() => {
   text-decoration: none;
 }
 </style>
+
