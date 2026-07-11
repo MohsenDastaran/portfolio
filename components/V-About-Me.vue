@@ -106,6 +106,10 @@ onMounted(() => {
   pointer-events: all;
   transition: color 400ms;
 
+  &__github {
+    translate: 0 -2rem;
+  }
+
   &__title {
     opacity: 0.85;
 
