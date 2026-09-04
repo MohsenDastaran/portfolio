@@ -1,7 +1,7 @@
 ---
 description: 'Quickly estimate the cost of your website project with our Free, Expert-verified and AI-powered tool. Get an exact estimate based on website type, features, and scale.'
 # source: 'https://github.com/MohsenDastaran'
-live: 'http://estimatewebsitecost.com/'
+live: 'http://estimate.dastaran.com/'
 tags:
   - Vue.js
   - Nuxt.js
@@ -18,7 +18,7 @@ Estimate Website Cost
 :::
 #live
 
-[see live](http://estimatewebsitecost.com/)
+[see live](http://estimate.dastaran.com/)
 
 ::
 ::project-main
