@@ -72,7 +72,7 @@ onMounted(() => {
     ref="projectEl"
     class="project"
     data-scroll
-    :data-scroll-speed="id % 2 === 0 ? -0.5 : 1"
+    :data-scroll-speed="id % 2 === 0 ? 0.15 : -0.15"
   >
     <NuxtLink v-hoverable class="project__wrapper" :href="project._path">
       <div ref="projectImageWrapper" class="project__image__wrapper">
@@ -112,7 +112,9 @@ onMounted(() => {
 .project {
   position: relative;
 
-  max-width: 475px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   will-change: transform, opacity;
 
   &__wrapper {
@@ -132,6 +134,7 @@ onMounted(() => {
     display: block;
 
     width: 100%;
+    max-width: 100%;
     height: 100%;
 
     object-fit: cover;
@@ -139,14 +142,15 @@ onMounted(() => {
 
     &__wrapper {
       width: 100%;
+      max-width: 100%;
       height: 40vw;
-      min-height: 20rem;
-      max-height: 30rem;
+      min-height: 16rem;
+      max-height: 22rem;
 
       overflow: hidden;
 
-      @supports (aspect-ratio: 1/1) {
-        aspect-ratio: 1/1;
+      @supports (aspect-ratio: 4 / 3) {
+        aspect-ratio: 4 / 3;
 
         height: unset;
         max-height: unset;

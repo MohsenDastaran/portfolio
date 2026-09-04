@@ -44,12 +44,10 @@ defineProps({ projects: Object });
   }
 
   &__list {
-    --spacing: 60%;
-
     display: grid;
     justify-items: center;
     align-items: start;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: calc(1.25 * var(--step-5));
 
     max-width: 1100px;
@@ -58,23 +56,19 @@ defineProps({ projects: Object });
     margin: 0 auto;
     padding-inline-start: 0;
 
-    @media screen and (min-width: 850px) {
-      margin-block-start: 5rem;
+    &__item {
+      min-width: 0;
+      width: 100%;
+      max-width: 475px;
+    }
 
-      &__item:nth-child(odd) {
-        margin-block-start: calc(-0.75 * var(--spacing));
-      }
+    @media screen and (min-width: 850px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-block-start: 5rem;
+      row-gap: calc(1.75 * var(--step-5));
 
       &__item:nth-child(even) {
-        margin-block-start: calc(0.125 * var(--spacing));
-      }
-
-      &__item:first-of-type {
-        margin-block-start: 0;
-      }
-
-      &__item:nth-child(2) {
-        margin-block-start: var(--spacing);
+        margin-block-start: 7rem;
       }
     }
   }
