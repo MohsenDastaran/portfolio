@@ -3,10 +3,10 @@ description: 'Universal, framework-agnostic ecosystem of, ready-to-use, copy-and
 source: 'https://github.com/MohsenDastaran/uni-kit'
 live: 'https://uni-kit.dastaran.com/'
 tags:
-  - Tauri
-  - TypeScript
-  - WASM
-  - Privacy
+  - Slint
+  - Iced
+  - GPUI
+  - NSH
 image: '/uni-kit.png'
 previewImage: '/uni-kit.png'
 createdAt: '2026-09-10T00:00:00+03:00'
