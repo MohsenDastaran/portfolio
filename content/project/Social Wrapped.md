@@ -6,7 +6,7 @@ tags:
   - Tauri
   - TypeScript
   - WASM
-  - Privacy
+  - Rust
 image: '/social-wrapped.png'
 previewImage: '/social-wrapped.png'
 createdAt: '2026-08-20T00:00:00+03:00'
@@ -50,3 +50,4 @@ Would love to hear from you :wink:
 :::project-section{type="project-next"}
 ::::project-next
 ::
+

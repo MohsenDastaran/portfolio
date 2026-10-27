@@ -1,6 +1,23 @@
 <script setup>
-const { data: projectContents } = await useAsyncData('projects', () =>
-  queryContent('project').sort({ createdAt: -1 }).find(),
+// NOTE: sort in JS so the order is exactly the same on the server and on the
+// client (newest first, path as a deterministic tie-breaker)
+function sortProjects(projects) {
+  return [...projects].sort((a, b) => {
+    const dateA = String(a.createdAt ?? '');
+    const dateB = String(b.createdAt ?? '');
+
+    if (dateA < dateB) return 1;
+    if (dateA > dateB) return -1;
+
+    if (a._path < b._path) return -1;
+    if (a._path > b._path) return 1;
+
+    return 0;
+  });
+}
+
+const { data: projectContents } = await useAsyncData('projects', async () =>
+  sortProjects(await queryContent('project').find()),
 );
 defineProps({ projects: Object });
 </script>
@@ -10,10 +27,12 @@ defineProps({ projects: Object });
     <VH2 class="projects__title">Projects</VH2>
 
     <ul class="projects__list">
+      <!-- NOTE: use a stable key (not the index) so hydrated markup can never
+      pair one project's image with another project's title -->
       <VProjectsItem
-        v-for="(project, key) in projects || projectContents"
-        :id="key"
-        :key="key"
+        v-for="(project, index) in projects || projectContents || []"
+        :id="index"
+        :key="project._path || index"
         :project="project"
         :aria-label="project.title"
         class="projects__list__item"

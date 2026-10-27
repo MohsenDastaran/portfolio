@@ -14,9 +14,7 @@ const props = defineProps({
   project: { type: Object, required: true, default: () => ({}) },
 });
 
-const tagsString = computed(() =>
-  props.project.tags.reduce((str, val) => `${str}, ${val}`),
-);
+const tagsString = computed(() => (props.project.tags || []).join(', '));
 
 onMounted(() => {
   const imageResizeObserver = new ResizeObserver(() => {
@@ -243,3 +241,4 @@ onMounted(() => {
   }
 }
 </style>
+

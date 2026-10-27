@@ -71,6 +71,14 @@ export default defineNuxtConfig({
     imports: [{ name: 'on', from: 'rad-event-listener' }],
   },
 
+  experimental: {
+    // NOTE: inline the payload into each prerendered page. When payloads are
+    // extracted to /_payload.json, a stale/cached payload can be hydrated
+    // against a newer HTML shell, which leaves SSR images untouched while
+    // patching the text -> mismatched image/title pairs in production.
+    payloadExtraction: false,
+  },
+
   routeRules: {
     '/sitemap.xml': { prerender: true },
     '/_headers': { prerender: true },
